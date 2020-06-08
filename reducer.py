@@ -20,6 +20,7 @@ import sys
 # Cash  455.51
 
 # Sum of all sales (values) is initialized with zero, we just started
+# Count of Values is intialized
 sum_of_values = 0
 count_of_values = 0
 
@@ -46,7 +47,9 @@ for line in sys.stdin:
         # to the standart output (stdout)
         # Key and value are seperated by a tab (\t)
         # Line ends with new line (\n)
+	# Calculate average of values
 	avg_of_values = sum_of_values / count_of_values
+	# only write for categories where count of values is higher than  114
 	if count_of_values > 114:
         	sys.stdout.write("{0}\t{1}\n".format(previous_key, avg_of_values))
 	else:
