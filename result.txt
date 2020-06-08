@@ -1,3 +1,2 @@
-Cameras	114
-Computers	117
+Computers	242.142051282
 Video Games	115
